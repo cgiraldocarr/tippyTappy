@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.title = "Tippy Tappy: Tip Calculator"
+        self.title = "Tip Calculator"
     }
 
     @IBAction func onTap(_ sender: Any) {
@@ -56,5 +56,6 @@ class ViewController: UIViewController {
         splitTotal.text = String(format: "$%.2f", individualTotal)
         
     }
+    
 }
 
