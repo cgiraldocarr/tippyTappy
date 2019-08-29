@@ -14,6 +14,8 @@
 		0F5386222312441D0053F500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5386202312441D0053F500 /* LaunchScreen.storyboard */; };
 		0F53862D2312441D0053F500 /* tippyTappyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F53862C2312441D0053F500 /* tippyTappyTests.swift */; };
 		0F5386382312441D0053F500 /* tippyTappyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5386372312441D0053F500 /* tippyTappyUITests.swift */; };
+		0F538646231394F80053F500 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F538645231394F80053F500 /* SettingsViewController.swift */; };
+		0F5386482315A3F00053F500 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F5386472315A3F00053F500 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,9 @@
 		0F5386332312441D0053F500 /* tippyTappyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tippyTappyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F5386372312441D0053F500 /* tippyTappyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tippyTappyUITests.swift; sourceTree = "<group>"; };
 		0F5386392312441D0053F500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F538645231394F80053F500 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0F5386472315A3F00053F500 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../../Desktop/logo.png; sourceTree = "<group>"; };
+		0F5386492315A4F10053F500 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +102,14 @@
 		0F5386162312441A0053F500 /* tippyTappy */ = {
 			isa = PBXGroup;
 			children = (
+				0F538645231394F80053F500 /* SettingsViewController.swift */,
 				0F5386172312441A0053F500 /* AppDelegate.swift */,
 				0F5386192312441A0053F500 /* ViewController.swift */,
 				0F53861B2312441A0053F500 /* Main.storyboard */,
 				0F53861E2312441D0053F500 /* Assets.xcassets */,
 				0F5386202312441D0053F500 /* LaunchScreen.storyboard */,
 				0F5386232312441D0053F500 /* Info.plist */,
+				0F5386492315A4F10053F500 /* logo.png */,
 			);
 			path = tippyTappy;
 			sourceTree = "<group>";
@@ -121,6 +128,7 @@
 			children = (
 				0F5386372312441D0053F500 /* tippyTappyUITests.swift */,
 				0F5386392312441D0053F500 /* Info.plist */,
+				0F5386472315A3F00053F500 /* logo.png */,
 			);
 			path = tippyTappyUITests;
 			sourceTree = "<group>";
@@ -246,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F5386482315A3F00053F500 /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +267,7 @@
 			files = (
 				0F53861A2312441A0053F500 /* ViewController.swift in Sources */,
 				0F5386182312441A0053F500 /* AppDelegate.swift in Sources */,
+				0F538646231394F80053F500 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

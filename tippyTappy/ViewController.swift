@@ -14,13 +14,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var splitTotal: UILabel!
+    @IBOutlet weak var waysToSplit: UITextField!
     
+    // Setting total to global variable since I need to access it in two different functions
+    var total = 0.00
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.title = "Tippy Tappy: Tip Calculator"
     }
-
 
     @IBAction func onTap(_ sender: Any) {
         view.endEditing(true)
@@ -34,12 +38,23 @@ class ViewController: UIViewController {
         let tipPercentages = [0.15, 0.2, 0.25]
         
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
-        let total = bill + tip
+        total = bill + tip
         
         // Update the tip and total labels
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
     }
     
+    @IBAction func billSplitTotalWays(_ sender: Any) {
+        //Get the number of ways to split
+        let numSplits = Double(waysToSplit.text!) ?? 0
+        
+        //Calculate individual total
+        let individualTotal = total / numSplits
+        
+        //Update the indivual total
+        splitTotal.text = String(format: "$%.2f", individualTotal)
+        
+    }
 }
 
